@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ativade JS Eventos</title>
+
+    <script>
+        function carregarPagina() {
+          alert("Página carregada!");
+        }
+    
+        function mudarTexto() {
+          document.getElementById("texto").innerHTML = "Texto Alterado!";
+        }
+    
+        function mudarCor() {
+          var corSelecionada = document.getElementById("cores").value;
+          document.getElementById("texto").style.color = corSelecionada;
+        }
+      </script>
+    
+
+</head>
+<body onload="carregarPagina()">
+
+    <h1>Eventos Javascript</h1>
+  
+    <p>Esta página demonstra o uso dos eventos onload, onclick e onchange em Javascript.</p>
+  
+    <button onclick="mudarTexto()">Clique Aqui</button>
+  
+    <p id="texto">Texto Inicial</p>
+  
+    <select id="cores" onchange="mudarCor()">
+      <option value="vermelho">Vermelho</option>
+      <option value="azul">Azul</option>
+      <option value="verde">Verde</option>
+    </select>
+  
+  </body>
+</html>
