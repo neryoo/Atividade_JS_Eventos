@@ -8,7 +8,11 @@
 <body>
 
 
-$php
+<$php
+
+Teste PHP
+
+$>
     
 </body>
 </html>
