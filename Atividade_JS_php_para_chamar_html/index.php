@@ -10,7 +10,7 @@
 
 <$php
 
-Teste PHP
+echo <h1>Teste PHP</h1>
 
 $>
     
